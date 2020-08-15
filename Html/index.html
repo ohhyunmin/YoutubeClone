@@ -8,6 +8,12 @@
       src="https://kit.fontawesome.com/b1ed97980a.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="../JavaScript/Main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Css/Style.css" />
   </head>
   <body>
     <header>
@@ -24,60 +30,102 @@
     <section class="player">
       <video controls src="../Video/videoSample.mp4"></video>
     </section>
-
-    <section class="info">
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>해쉬태그1</li>
-          <li>해쉬태그2</li>
-          <li>해쉬태그3</li>
-        </ul>
-        <div class="titleANdButton">
-          <span class="title">
-            Clone Coding : My First Clone Coding
-          </span>
-          <button class="moreButton">
-            <icon class="fas fa-caret-down"></icon>
-          </button>
-        </div>
-        <div class="views">
-          <span class="views">조회수 : 10000</span>
-        </div>
-      </div>
-      <div class="actions">
-        <li>
-          <button>
-            <icon class="fas fa-thumbs-up"></icon><span>Good</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <icon class="fas fa-thumbs-down"></icon><span>Bad</span>
-          </button>
-        </li>
-        <li>
-          <button><icon class="fas fa-share"></icon><span>Slave</span></button>
-        </li>
-        <li>
-          <button><icon class="fas fa-plus"></icon><span>Save</span></button>
-        </li>
-        <li>
-          <button>
-            <icon class="fab fa-font-awesome-flag"></icon><span>Report</span>
-          </button>
-        </li>
-      </div>
-      <div class="channel">
+    <div class="infoAndUpNext">
+      <section class="info">
         <div class="metadata">
-          <img src="../Image/ImgMain.png" alt="" />
-          <div class="info">
-            <span class="name">오현민</span>
-            <span class="subscriber">구독자 1명</span>
+          <ul class="hashtags">
+            <li>해쉬태그1</li>
+            <li>해쉬태그2</li>
+            <li>해쉬태그3</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              Clone Coding : Youtube Clone Coding 으로 Html 및 Css 에 대한
+              이해도를 높이고 어떠한 기능과 어떻게 구현해야하는지 알아보자. 단,
+              Sass와 less는 사용하지 않는다.
+            </span>
+            <button class="moreButton">
+              <icon class="fas fa-caret-down"></icon>
+            </button>
+          </div>
+          <div class="views">
+            <span class="views">조회수 : 1만회</span>
           </div>
         </div>
-        <div class="subscribe"></div>
-      </div>
-    </section>
-    <section class="upNext"></section>
+        <div class="actions">
+          <li>
+            <button>
+              <icon class="active fas fa-thumbs-up"></icon><span>Good</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <icon class="fas fa-thumbs-down"></icon><span>Bad</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <icon class="fas fa-share"></icon><span>Slave</span>
+            </button>
+          </li>
+          <li>
+            <button><icon class="fas fa-plus"></icon><span>Save</span></button>
+          </li>
+          <li>
+            <button>
+              <icon class="fab fa-font-awesome-flag"></icon><span>Report</span>
+            </button>
+          </li>
+        </div>
+        <div class="channel">
+          <div class="metadata">
+            <img src="../Image/ImgMain.png" alt="" />
+            <div class="info">
+              <span class="name">오현민</span>
+              <span class="subscribers">구독자 1명</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+      <section class="upNext">
+        <span class="title">다음 동영상</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="../Image/image1.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">너무 이쁜 바다 ㅎㅎ</span>
+              <span class="name">Mollo94</span>
+              <span class="views">조회수 1만회</span>
+            </div>
+            <button class="moreButton">
+              <icon class="fas fa-ellipsis-v"></icon>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="../Image/image2.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">이것이 대자연 ??</span>
+              <span class="name">Mollo94</span>
+              <span class="views">10만회</span>
+            </div>
+            <button class="moreButton">
+              <icon class="fas fa-ellipsis-v"></icon>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="../Image/image3.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">구름이 마치 용같아.. 멋있다 ㅎㅎ</span>
+              <span class="name">Mollo94</span>
+              <span class="views">100만회</span>
+            </div>
+            <button class="moreButton">
+              <icon class="fas fa-ellipsis-v"></icon>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
